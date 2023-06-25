@@ -1,0 +1,28 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/Hex7Seg.sv,1677759525,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/IO.sv,,Hex7Seg,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/IO.sv,1678003225,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/al2.sv,,IO,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/al2.sv,1677467155,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/alu.sv,,sl2,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/alu.sv,1677760918,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/aludec.sv,,alu,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/aludec.sv,1680001925,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/controller.sv,,aludec,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/controller.sv,1680002985,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/dMemoryDecoder.sv,,controller,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/dMemoryDecoder.sv,1679890869,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/datapath.sv,,dMemoryDecoder,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/datapath.sv,1680057647,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/new/floprenr.sv,,datapath,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/maindec.sv,1680057647,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/new/mem.sv,,maindec,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/mips.sv,1680002878,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/mux2.sv,,mips,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/mux2.sv,1679995806,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/new/mux4.sv,,mux2;mux3,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/mux7Seg.sv,1677759525,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/regfile.sv,,mux7Seg,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/regfile.sv,1677467152,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/signext.sv,,regfile,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/signext.sv,1677467156,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/top.sv,,signext,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/test.sv,1679915187,systemVerilog,,,,test,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/top.sv,1679915304,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/test.sv,,top,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/new/ander.sv,1679891266,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/controller.sv,,ander,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/new/flopr.sv,1679889001,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/new/floprdouble.sv,,flopr,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/new/floprdouble.sv,1679889003,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/new/floprenr.sv,,floprdouble,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/new/floprenr.sv,1679995956,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/maindec.sv,,flopenr,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/new/mem.sv,1680003414,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/mips.sv,,mem,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/new/mux4.sv,1679889000,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/mux7Seg.sv,,mux4,,,,,,,,
+D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/new/orer.sv,1679888998,systemVerilog,,D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/sources_1/imports/new/regfile.sv,,orer,,,,,,,,
