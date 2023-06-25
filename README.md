@@ -28,7 +28,7 @@ MIPS多周期处理器
  <br>	4）控制单元controller与单周期有所区别，主要区别在于maindec模块需要利用摩尔型状态机进行状态的转化，状态转化的原理图如下：
  
  <br>![图片](https://github.com/Indifference061/MIPS-MULTI/assets/87850383/45ee9772-0eea-40e9-ad94-8f802550fec8)
-各个状态的真值表如下：
+<br>各个状态的真值表如下：
 
 <br>![图片](https://github.com/Indifference061/MIPS-MULTI/assets/87850383/be1a7016-b8fa-4ace-89ca-b83ea5aa2c97)
 
