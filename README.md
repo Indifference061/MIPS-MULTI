@@ -9,7 +9,7 @@ MIPS多周期处理器
 - 在NEXYS4 DDR板上实现两位正整数加法运算，如12+34=046 
 
 ## 实验方案：
-1.基础部分：
+### 基础部分：
 <br>	1)MIPS指令处理器可以分为程序计数器（计算PC值）、寄存器文件（读取指令中的rs、rt地址进行读写操作）、指令存储器（读取指令）、数据存储器（将计算结果进行存储）4个状态元件。不同的状态元件通过数据通路连接，并使用复用器，进行其他指令的数据拓展。
 <br>	2）MIPS指令处理器通过读入instr，并通过真值表进行对应的解析，进行过相应的操作，基础部分的主译码器真值表如下：
 
@@ -38,37 +38,40 @@ MIPS多周期处理器
 
 <br>5）设计仿真文件对memfile.dat进行仿真测试。
 
-2.上板部分：
+### 上板部分：
 1）需要增加andi指令，就需要在基础的部分，在maindec中增加表示andi的状态，并增加数据通路或者复用器。
 各个状态对应control对应参数的赋值
-指令	pcwrite,memwrite,irwrite,regwrite,alusrca,branch,iord	|memtoreg	| regdst	|alusrcb	|Pcsrc	|aluop
-FETCH	1010000	0	0	01	00	000
-DECODE	0000000	0	0	11	00	000
-MEMADR	0000100	0	0	10	00	000
-MEMRD	0000001	0	0	00	00	000
-MEMWB	0001000	1	0	00	00	000
-MEMWR	0100001	0	0	00	00	000
-RTYPEEX	0000100	0	0	00	00	010
-RTYPEWB	0001000	0	1	00	00	000
-BEQEX	0000110	0	0	00	01	001
-ADDIEX	0000100	0	0	10	00	000
-ADDIWB	0001000	0	0	00	00	000
-JEX	1000000	0	0	00	10	000
-ANDIEX	0000100	0	0	10	00	100
-ANDIWB	0001000	0	0	00	00	000
+<br>指令	pcwrite,memwrite,irwrite,regwrite,alusrca,branch,iord	|memtoreg	| regdst	|alusrcb	|Pcsrc	|aluop
+<br>FETCH	1010000	0	0	01	00	000
+<br>DECODE	0000000	0	0	11	00	000
+<br>MEMADR	0000100	0	0	10	00	000
+<br>MEMRD	0000001	0	0	00	00	000
+<br>MEMWB	0001000	1	0	00	00	000
+<br>MEMWR	0100001	0	0	00	00	000
+<br>RTYPEEX	0000100	0	0	00	00	010
+<br>RTYPEWB	0001000	0	1	00	00	000
+<br>BEQEX	0000110	0	0	00	01	001
+<br>ADDIEX	0000100	0	0	10	00	000
+<br>ADDIWB	0001000	0	0	00	00	000
+<br>JEX	1000000	0	0	00	10	000
+<br>ANDIEX	0000100	0	0	10	00	100
+<br>ANDIWB	0001000	0	0	00	00	000
 
-Alu译码器如下：
-操作	Aluop|	Funct	|Alucontrol
-Addi	000	    /	       010
-Andi	100	    /	       000
-Add	010	100000	010
-Sub	010	100010	110
-And	010	100100	000
-Or	010	100101	001
-Slt	010	101010	111
-3.IO接口部分
-增加IO模块，并用dMemoryDecoder模块将其dmem扩展，包括dmem，IO模块和7段数码管，并进行仿真
-原理图如下：
-主要增加了两个IO设备：16位开关输入和七段数码管进行加法结果输出，BTNR和BTNL作为状态端口分别控制数据的输入输出，当BTNR为1时，可输入新数据,  status[1]=1，当BTNL为1时，led已准备好，可输出新数据, status[0]=1。
-	在IO模块中传入writeData，并根据控制端口以及addr[7]决定的Write使能对led进行计算结果赋值
-	七段数码管的数据由IO传入，由switch[15:0],0000,led[11:0]构成，在数码管上进行分时显示。
+<br>Alu译码器如下：
+<br>操作	Aluop|	Funct	|Alucontrol
+<br>Addi	000	    /	       010
+<br>Andi	100	    /	       000
+<br>Add	010	100000	010
+<br>Sub	010	100010	110
+<br>And	010	100100	000
+<br>Or	010	100101	001
+<br>Slt	010	101010	111
+### IO接口部分
+<br>增加IO模块，并用dMemoryDecoder模块将其dmem扩展，包括dmem，IO模块和7段数码管，并进行仿真
+<br>原理图如下：
+
+<br>![图片](https://github.com/Indifference061/MIPS-MULTI/assets/87850383/210c4f2b-165d-49f0-8a65-cfbde418b8fc)
+
+<br>主要增加了两个IO设备：16位开关输入和七段数码管进行加法结果输出，BTNR和BTNL作为状态端口分别控制数据的输入输出，当BTNR为1时，可输入新数据,  status[1]=1，当BTNL为1时，led已准备好，可输出新数据, status[0]=1。
+- 在IO模块中传入writeData，并根据控制端口以及addr[7]决定的Write使能对led进行计算结果赋值
+- 七段数码管的数据由IO传入，由switch[15:0],0000,led[11:0]构成，在数码管上进行分时显示。
